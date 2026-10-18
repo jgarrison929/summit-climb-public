@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#06210f">
+  <meta name="description" content="Summit Climb - a browser vertical-climbing game. Run, jump, chain combos and climb as high as you can!">
+  <title>Summit Climb</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2306210f'/%3E%3Cpath d='M4 56L24 22l10 14 8-10 18 30z' fill='%23264653'/%3E%3Cpath d='M24 22l-5 9h10z' fill='%23ffffff'/%3E%3Ccircle cx='44' cy='22' r='9' fill='%23e8b48a'/%3E%3Cpath d='M34 20a10 9 0 0 1 20 0z' fill='%23f77f00'/%3E%3Ccircle cx='49' cy='17' r='2' fill='%23fff6b0'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="stage">
+    <canvas id="game" width="480" height="640" aria-label="Summit Climb game canvas"></canvas>
+    <div id="nameEntry" class="hidden">
+      <form id="nameForm" autocomplete="off">
+        <label for="nameInput">Enter your name for the leaderboard</label>
+        <div class="row">
+          <input id="nameInput" maxlength="12" autocomplete="off" autocapitalize="characters" spellcheck="false" enterkeyhint="done">
+          <button type="submit">OK</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="touch" aria-hidden="true">
+    <div class="pad">
+      <button id="btnLeft" class="tbtn" type="button">&#9664;</button>
+      <button id="btnRight" class="tbtn" type="button">&#9654;</button>
+    </div>
+    <div class="mini">
+      <button id="btnPause" class="sbtn" type="button">II</button>
+      <button id="btnMute" class="sbtn" type="button">&#9835;</button>
+    </div>
+    <div class="pad">
+      <button id="btnJump" class="tbtn jump" type="button">JUMP</button>
+    </div>
+  </div>
+  <noscript><p class="noscript">Summit Climb needs JavaScript enabled.</p></noscript>
+  <script src="analytics.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

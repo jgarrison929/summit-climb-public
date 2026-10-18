@@ -1,0 +1,18 @@
+{
+  "name": "summit-climb",
+  "version": "1.0.0",
+  "description": "Summit Climb - a browser vertical-climbing game (vanilla JS + HTML5 canvas) with a global leaderboard",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.23.1"
+  }
+}
